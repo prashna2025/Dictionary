@@ -38,7 +38,8 @@ body{
     height:10vh;
     margin-bottom: 2rem;
     background-color: black;
-
+    border-radius: 1rem;
+    padding: 1rem;
 
 }
 
@@ -46,7 +47,7 @@ body{
 .search-form button{
     flex-basis: 70%;
     font-size:1 rem;
-    padding: .6rem 1 rem;
+    padding: 1rem 1.5rem;
     border: none;
     outline: none;
     background-color: transparent;

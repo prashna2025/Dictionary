@@ -45,7 +45,7 @@ async function fetchandCreateCard() {
 
                 <div class="property">
                     <span>Phonetics - </span>
-                    <span>${data.phonetics} </span>
+                    <span>${data.phonetics[0].text} </span>
 
                 </div>
 
