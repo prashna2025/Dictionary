@@ -27,7 +27,7 @@ async function fetchandCreateCard() {
     let partOfSpeechArray = []
 
     for(let i=0 ; i <data.meanings.length-1 ; i++){
-        partsOfSpeechArray.push(data,meanings[i].partOfSpeech)
+        partOfSpeechArray.push(data.meanings[i].partOfSpeech)
     }
     
     
@@ -36,7 +36,7 @@ async function fetchandCreateCard() {
      <div class="card">
 
                 <div class="property">
-                    <span>Word</span>
+                    <span>Word - </span>
                     <span>${data.word} </span>
 
 
@@ -44,7 +44,7 @@ async function fetchandCreateCard() {
 
 
                 <div class="property">
-                    <span>Phonetics</span>
+                    <span>Phonetics - </span>
                     <span>${data.phonetics} </span>
 
                 </div>
@@ -58,21 +58,21 @@ async function fetchandCreateCard() {
 
 
                 <div class="property">
-                    <span>Defination</span>
-                    <span>${data.meanings[0].definationss[0].definition}</span>
+                    <span>Defination - </span>
+                    <span>${data.meanings[0].definitions[0].definition}</span>
 
                 </div>
 
 
                 <div class="property">
-                    <span>Example</span>
-                    <span>${data.meanings[1].definationss[0].example}</span>
+                    <span>Example - </span>
+                    <span>${data.meanings[1].definitions[0].example}</span>
 
                 </div>
 
 
                 <div class="property">
-                    <span> ${PartOfSpeechArray.map(e => e).join (',')}</span>
+                    <span> ${partOfSpeechArray.map(e => e).join(',')}</span>
                 </div>
 
             </div> 
